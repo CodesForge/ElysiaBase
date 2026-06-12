@@ -4,12 +4,19 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/pg": "^8.20.0",
+    "drizzle-kit": "^0.31.10"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "imports": {
     "#/*": "./src/*"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.2",
+    "envalid": "^8.2.0",
+    "pg": "^8.21.0"
   }
 }
